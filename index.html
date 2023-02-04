@@ -1,81 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hulsy | Front-End</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saikaley Realty | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/6154c4b8d1.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-    <header class="container">
-        <div class="flex-layout top-row">
-            <a href=""><i class="fa-solid fa-helicopter-symbol icon"></i></a>
-
-            <nav>
-                <ul class="flex-layout navbar">
-                    <li><a class="highlight-text-fast" href="index.html">Home</a></li>
-                    <li><a class="highlight-text-fast" href="resume.html">Resume</a></li>
-                    <li><a class="highlight-text-fast" href="courses.html">Courses</a></li>
+    <nav id="mainNav" class="navbar navbar-expand-lg bg-gradient navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Saikaley Realty</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedContent"
+                aria-controls="collapsedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <form action="" class="theme-selector">
-            <fieldset>
-                <legend hidden>Pick a colour scheme</legend>
-                <label for="theme" hidden>Dark Theme</label>
-                <input type="radio" name="theme" id="dark" checked>
-                <label for="theme" hidden>Light Theme</label>
-                <input type="radio" name="theme" id="light">
-
-            </fieldset>
-        </form>
-        <h1 class="page-title">Alex Hulford</h1>
-    </header>
-    <main class="container">
-        <h2 class="section-title">Web Development</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight-text bigger">Aliquam eius
-                tempore
-                placeat ullam totam adipisci fugit quo dicta</span> , exercitationem, minus corrupti, distinctio
-            omnis
-            aut atque delectus numquam laboriosam beatae quis!</p>
-    </main>
-    <div class="inverse-color">
-        <section class="container">
-            <div><img src="" alt=""></div>
-            <h2 class="section-title">About Me</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloremque, ducimus repellendus
-                impedit
-                ipsa
-                optio. Quaerat temporibus eum nostrum esse sit perspiciatis deserunt labore vitae molestiae
-                voluptatum,
-                doloribus, accusantium enim?</p>
-        </section>
-    </div>
-    <section class="container">
-        <h2 class="section-title">AC- School of Advanced Technology</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laudantium nostrum dolorum ex tenetur
-            cumque facere eveniet consequuntur architecto, repudiandae deleniti dolore dicta harum quisquam corrupti
-            temporibus quasi minus unde?</p>
-        <a href="" class="highlight-text-fast">AC - Webpage</a>
+    </nav>
+    <section id="propertiesCarousel" class="carousel slide carousel-dark">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#propertiesCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#propertiesCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#propertiesCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imgs/apt1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h2 id="carouselHeader" class="display-5">123 Anywhere Ave</h2>
+                    <p>Bachelor, 1 Bedroom, 2 Bedroom Available for Rent</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/apt2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h2 id="carouselHeader" class="display-5">123 Anywhere Ave</h2>
+                    <p>Bachelor, 1 Bedroom, 2 Bedroom Available for Rent</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/apt3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h2 id="carouselHeader" class="display-5">123 Anywhere Ave</h2>
+                    <p>Bachelor, 1 Bedroom, 2 Bedroom Available for Rent</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev changeSlide" type="button" data-bs-target="#propertiesCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next changeSlide" type="button" data-bs-target="#propertiesCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </section>
-    <footer class="flex-layout bottom-row container">
-        <div>
-            <a href="https://www.linkedin.com/in/alex-hulford-3469aa250/"><i class="fa-brands fa-linkedin icon"></i></a>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 p-3 text-white bg-dark border border-dark-subtle rounded-3 text-center">
+                <h3>Your Next Ottawa Home</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis facere corrupti sequi, aliquid
+                    recusandae cum quasi sapiente a doloremque totam optio autem, velit itaque accusantium blanditiis
+                    laboriosam tempora perspiciatis fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                    dicta! Quam officia maiores explicabo, reiciendis et illum tempore nostrum possimus modi voluptates
+                    eligendi quasi.
+                </p>
+            </div>
+            <div class="col-md-6  p-3 text-white bg-dark border border-dark-subtle rounded-3 text-center">
+                <h3>Rent Today!</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis facere corrupti sequi, aliquid
+                    recusandae cum quasi sapiente a doloremque totam optio autem, velit itaque accusantium blanditiis
+                    laboriosam tempora perspiciatis fugit?</p>
+                <a href="#" class="btn btn-danger bg-gradient">Rent Now</a>
+            </div>
         </div>
-        <div>
-            <a href="https://github.com/hulsy"><i class="fa-brands fa-github icon"></i></a>
+    </section>
+
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-light text-center">
+            <p class="display-5 mb-3">Saikley Realty</p>
+            <small class="mb-0">Designed by Alex Hulford</small>
         </div>
-        <div>
-            <a href="https://twitter.com/AlexHulford"><i class="fa-brands fa-square-twitter icon"></i></a>
-        </div>
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
