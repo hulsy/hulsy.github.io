@@ -1,0 +1,27 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
+#mainNav {
+  background-color: var(--bs-danger);
+}
+
+.carousel-item {
+  max-height: 50vh;
+}
+img {
+  min-height: 375px;
+}
+
+.changeSlide:hover {
+  background-color: rgba(220, 255, 255, 0.1);
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#carouselHeader {
+  font-weight: 700;
+}
